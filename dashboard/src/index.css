@@ -45,11 +45,12 @@ code {
 	font-size: 120%;
 }
 #text {
-	position: relative;
-	padding: 8px;
-	width: calc(100% - 328px);
-	top: 48px;
-	left: 312px;
+    position: relative;
+    padding: 8px;
+    width: calc(100% - 358px);
+    top: 48px;
+    left: 312px;
+    margin: 0 15px;
 }
 .user-select {
 	-webkit-user-select: all;
@@ -88,10 +89,18 @@ code {
 	border-radius: 10%;
 	width: 200px;
 	margin: 5px;
+	-webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 .server:hover {
 	background: rgba(0,0,0,0.3);
 	filter: brightness(1.2);
+	-webkit-transition-duration: .17s;
+    transition-duration: .17s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 .server .avatar {
 	border-radius: 10%;
@@ -137,9 +146,17 @@ code {
 	justify-content: center;
 	height: 100%;
 	padding-left: 10px;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 #navbar a:hover {
 	background: #202225;
+	-webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
 }
 #navbar a[alt]:hover:after {
 	top: 48px;
@@ -193,12 +210,20 @@ code {
 	overflow: hidden;
 	color: #dcddde;
 	font-weight: bold;
+	-webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
 }
 #navbar a:hover .avatar,
 .guild.selected .avatar,
 .guild:hover .avatar {
 	border-radius: 30%;
 	color: #ffffff;
+	-webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
 }
 .noicon {
 	width: 48px;
@@ -225,17 +250,26 @@ code {
 }
 .bar {
 	position: absolute;
-	left: 0;
+	left: -100px;
 	top: 0;
 	display: block;
 	width: 8px;
 	border-radius: 0 4px 4px 0;
 	margin-left: -4px;
 	background-color: #ffffff;
+	margin-top: 14px;
+	-webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
 }
 .guild:hover .bar {
-	margin-top: 14px;
+	left: 0;
 	height: 20px;
+	-webkit-transition-duration: .15s;
+    transition-duration: .15s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease;
 }
 .guild.selected .bar {
 	margin-top: 4px;
@@ -360,6 +394,15 @@ fieldset input[type="url"] {
 fieldset input:invalid {
 	background: #FFAAAA;
 }
+#wb-settings h2 {
+	font-size: 16px;
+}
+#wb-settings fieldset {
+	border: none;
+    border-radius: 8px;
+    background-color: #2f3136;
+    padding: 16px;
+}
 .wb-settings-display:first-of-type {
 	display: inline-block;
 }
@@ -391,22 +434,39 @@ button.addmore:not([hidden]) {
 }
 #login-button {
 	display: flex;
-	margin: 20px auto;
 	padding: 20px 50px;
+	margin: 20px auto;
 	width: -moz-fit-content;
 	width: fit-content;
 	justify-content: center;
 	align-items: center;
-	font-size: 300%;
 	background: #2f3136;
-	border: 5px solid #202225;
-	border-radius: 30px;
+    border-radius: 28px;
+    font-size: 20px;
+    padding: 16px 32px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 500;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 #login-button:hover {
-	background-color:#36393f;
+	-webkit-box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    text-decoration: none;
+	-webkit-transition-duration: .2s;
+    transition-duration: .2s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 #login-button img {
-	width: 60px;
-	height: 60px;
+	width: 30px;
+	height: 30px;
 	padding-right: 10px;
+	filter: brightness(3);
+}
+#login-button span {
+	color: #fff;
 }
